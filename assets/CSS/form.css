@@ -1,0 +1,193 @@
+footer form, #forgot form, #reset_pwd form, #add form, #profil form
+, #signin form, #login form {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    background: #222;
+    color: white;
+    border-radius: 5px;
+    margin: 10% auto 10% auto;
+    padding: 5% 5% 5% 5%;
+    border: solid 3px #c94c4c;
+    box-shadow: 0 3px 6px rgba(0,0,0,1), 0 3px 6px rgba(0,0,0,1);
+    width: 500px;
+}
+
+/* XXXXXXXX */
+/* FORM DIV */
+/* XXXXXXXX */
+
+form div {
+    display: flex;
+    flex-direction: column;
+}
+form div + div {
+    margin-top: 5%;
+}
+
+
+
+/* XXXXXXXXXXXXXXXXX */
+/* FORM DIV ELEMENTS */
+/* XXXXXXXXXXXXXXXXX */
+
+form h2 {
+    text-align: center;
+    font-family: "Lucida Console", monospace;
+}
+
+form h2 + div {
+    margin-top: 10%;
+}
+
+footer form label, #forgot form label, #reset_pwd form label, #add form label
+, #profil form label, #signin form label, #login form label {
+	color: white;
+	text-decoration: underline;
+    text-align: left;
+}
+
+footer form input, #forgot form input, #reset_pwd form input, #add form input
+, #profil form input, #signin form input, #login form input
+, form textarea, form select, #gender div{
+	border: solid 3px;
+	border-radius: 0.4em;
+	text-align: center;
+    font-weight: 700;
+    height: 45px;
+    color: black;
+}
+
+form textarea {
+    height: 150px;
+}
+
+
+
+/* XXXXXXXXXXX */
+/* FORM BOUTON */
+/* XXXXXXXXXXX */
+
+.bouton {
+	font-weight: 700;
+	width: 100%;
+	margin: 10% 0% 5% 0%;
+	background: black;
+	color: white;
+	text-transform: uppercase;
+	padding: 15px;
+    border-radius: 3em;
+    height: auto;
+	transition: color .3s ease-in-out, background .3s ease-in-out, border-color .3s ease-in-out;
+}
+
+.bouton:hover{
+	background: #ccc;
+	color: #222;
+	border-color: #ccc;
+}
+
+
+
+/* XXXXXXXXX */
+/* FORM LIST */
+/* XXXXXXXXX */
+
+form ul {
+    padding: 0;
+}
+form ul li{
+    list-style: none;
+}
+form li + li {
+    margin-top: 1%;
+}
+
+
+
+/* XXXXXXXXXXX */
+/* SELECT DATE */
+/* XXXXXXXXXXX */
+
+.dob {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.day, .month, .year {
+    width: 30%;
+}
+
+/* XXXXXXXXXXX */
+/* SELECT TIME */
+/* XXXXXXXXXXX */
+
+.heure {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.hour, .min {
+    width: 45%;
+}
+
+
+/* XXXXXXXXXXXXX */
+/* SELECT GENDER */
+/* XXXXXXXXXXXXX */
+
+#gender {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+#gender div {
+    margin: 0;
+    width: 30%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    background: white;
+}
+
+#gender div p {
+    margin: 0;
+}
+
+.gender_check:before {
+    width: 15px;
+    height: 15px;
+    border-radius: 15px;
+    top: 14.5px;
+    left: -1.5px;
+    position: relative;
+    background-color: black;
+    content: '';
+    display: inline-block;
+    visibility: visible;
+    border: 2px solid white;
+}
+
+.gender_check:hover:before {
+    background-color: #c94c4c;
+}
+
+.gender_check:checked:before {
+    width: 15px;
+    height: 15px;
+    border-radius: 15px;
+    top: 14.5px;
+    left: -1.5px;
+    position: relative;
+    background-color: #c94c4c;
+    content: '';
+    display: inline-block;
+    visibility: visible;
+    border: 2px solid white;
+}
+
+

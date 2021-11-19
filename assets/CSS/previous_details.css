@@ -1,0 +1,129 @@
+#details {
+    justify-content: center;
+    margin: 10% auto 10% auto;
+}
+
+#details ul {
+    width: 600px;
+    border: solid 3px #c94c4c;
+    border-radius: 5px;
+    background: #222;
+    color: white;
+    padding: 3%;
+    list-style: none;
+}
+
+#details .about {
+    display: block;
+}
+
+.oui {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin: 3%;
+    padding: 3% 3% 3% 3%;
+    border-top: solid 1px #c94c4c;
+    border-bottom: solid 1px #c94c4c;
+}
+
+.oui + li {
+    text-align: center;
+}
+
+.perc + div + li {
+    margin-top: 8%;
+    margin-bottom: 8%;
+    text-align: justify;
+}
+
+.perc{
+    margin-top: 8%;
+    max-width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.perc div {
+    border: solid 1px white;
+    border-radius: 5px;
+    height: 30px;
+    width: 32%;
+    text-align: center;
+}
+
+.man {
+    background: #c94c4c;
+}
+.woman {
+    background: #C9C94C;
+}
+.others {
+    background: #C98B4C;
+}
+
+.perc + div {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+#man, #woman, #others {
+    text-align: center;
+    text-decoration: underline;
+    width: 32%;
+}
+
+#man {
+    color: #c94c4c;
+}
+#woman {
+    color: #C9C94C;
+}
+#others {
+    color: #C98B4C;
+}
+
+.rating {
+    display: flex;
+    width: 60%;
+    margin: auto;
+    justify-content: space-evenly;
+    transform: rotateY(180deg);
+}
+
+.rating input{
+    display: none;
+}
+
+.rating label {
+    display: block;
+    cursor: pointer;
+    width: 50px;
+}
+
+.rating label:before {
+    content: '\f005';
+    font-family: "FontAwesome";
+    position: absolute;
+    display: block;
+    font-size: 50px;
+    color: white;
+}
+
+.rating label:after {
+    content: '\f005';
+    font-family: "FontAwesome";
+    position: relative;
+    display: block;
+    font-size: 50px;
+    color: #c94c4c;
+    opacity: 0;
+    transition: 0.5s;
+    text-shadow: 0px 0px 1px rgba(1,1,1,1);
+}
+
+.rating label:hover:after, .rating label:hover ~ label:after, .rating input:checked ~ label:after {
+    opacity: 1;
+}

@@ -1,0 +1,117 @@
+footer {
+    background: black;
+    color: white;
+    border-top: solid 5px black;
+}
+
+footer form, footer form + div {
+    padding: 5% 30% 5% 30%;
+    margin: 0;
+}
+
+footer form {
+    width: auto;
+    border: none;
+    border-bottom: solid 5px #c94c4c;
+}
+
+#contact {
+    display: flex;
+    flex-direction: column;
+    max-height: 0;
+    visibility: hidden;
+    transform: scaleY(0);
+    transition: max-height 0.5s ease;
+    transition: transform 0.5s ease;
+}
+
+#contact label {
+    text-align: left;
+}
+
+footer ul {
+    margin-top: 8%;
+}
+
+#legal a, #socialmedia a {
+    color: white;
+}
+
+#legal li + li {
+    margin-top: 1%;
+}
+
+#under {
+    display: flex;
+    justify-content: space-between;
+}
+
+#socialmedia {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+footer span + span {
+    margin-left: 5%;
+}
+
+footer img + img {
+    margin-left: 19%;
+}
+
+ul + #under {
+    margin-top: 5%;
+}
+
+footer img {
+    border-radius: 50%;
+}
+
+footer select {
+    border: solid 3px;
+	border-radius: 0.4em;
+	text-align: center;
+    font-weight: 700;
+    height: 45px;
+    color: black;
+    width: 100%;
+}
+
+@media (max-width: 1000px) {
+    #under {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    footer select {
+        padding-left: 2%;
+    }
+}
+
+@media (max-width: 768px) {
+
+    footer form {
+        padding: 5% 20% 5% 20%;
+    }
+    footer ul {
+        margin-top: 15%;
+    }
+}
+
+@media (max-width: 600px) {
+
+    footer {
+        text-align: center;
+        padding-bottom: 7%;
+    }
+
+    footer ul {
+        text-align: left;
+    }
+}
+
+@media (max-width: 500px) {
+    footer select {
+        padding-left: 3%;
+    }
+}

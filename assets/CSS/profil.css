@@ -1,0 +1,97 @@
+#edit_info_close, #edit_pwd_close {
+    display: none;
+}
+
+#profil form {
+    margin-bottom: 0;
+    max-height: 0;
+    transform: scaleY(0);
+    margin-top: 10%;
+}
+
+#profil #pwd {
+    margin-top: -10%;
+}
+
+#edit_info_open, #edit_pwd_open {
+    display: block
+}
+
+#profil {
+    flex-direction: column;
+    justify-content: center;
+}
+
+#profil h2, #base h2 {
+    color: #c94c4c;
+    text-decoration: underline;
+    font-family: "Lucida Console", monospace;
+}
+
+#profil span, h1, h2, h3 {
+    text-align: center;
+}
+
+#profil ul li {
+    list-style: none;
+}
+
+#edit {
+    display: flex;
+    justify-content: space-evenly;
+    text-decoration: underline;
+    border: solid 3px #c94c4c;
+    background: #222;
+    color: white;
+    padding: 3%;
+    border-radius: 10px;
+    margin: 5% 10% 0% 10%;
+}
+
+#soirees {
+    display: flex;
+    justify-content: space-evenly;
+    margin: 5%;
+    text-decoration: underline;
+}
+
+#soirees div {
+    display: inline-block;
+    text-align: center;
+}
+
+#diagramme {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    text-decoration: underline;
+    margin-top: 3%;
+    height: 300px;
+    border: solid 3px black;
+}
+
+@media (max-width: 768px) {
+    #edit {
+        justify-content: space-between;
+    }
+
+    #soirees {
+        flex-direction: column;
+    }
+
+    #soirees div {
+        margin-top: 5%;
+    }
+}
+
+@media (max-width: 500px) {
+    #edit {
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 600px) {
+    #profil form {
+        width: 100%;
+    }
+}
